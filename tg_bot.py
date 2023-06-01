@@ -7,4 +7,13 @@ bot = telebot.TeleBot(TOKEN)
 @bot.message_handler(commands=['start'])
 def start_message(message):
   bot.send_message(message.chat.id,"Привет ✌️ ")
-bot.infinity_polling(none_stop=True,interval=0)
+
+@bot.message_handler()
+def answer(message):
+  kd = ['как дела', 'Как дела', 'как дела?', 'Как дела?']
+  if message.text in kd:
+    answers = ['Всё хорошо!', 'Нормально', 'Шикарно']
+    bot.send_message(message.chat.id, random.choice(answers))
+
+if __name__ == '__main__':
+  bot.infinity_polling(none_stop=True,interval=0)
