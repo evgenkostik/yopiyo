@@ -17,11 +17,6 @@ def answer(message):
   if message.text in kd:
     answers = ['Всё хорошо!', 'Нормально', 'Шикарно']
     bot.send_message(message.chat.id, random.choice(answers))
-
-if __name__ == '__main__':
-  #запуск бота
-#   а вас не смущает что под условием ничего нет?!
-#   bot.infinity_polling находится вне условия!!!
 bot.infinity_polling(none_stop=True,interval=0)
 #комит Егора
 #коммит жени
