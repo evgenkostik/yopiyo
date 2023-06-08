@@ -1,4 +1,5 @@
 import telebot
+import random
 # получение токена бота из BotFather
 TOKEN = '6004830698:AAFlQT2D0UM9q7eLo-nofFU-zjebZhDFAk0'
 
