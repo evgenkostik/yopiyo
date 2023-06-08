@@ -22,3 +22,4 @@ if __name__ == '__main__':
   #запуск бота
 bot.infinity_polling(none_stop=True,interval=0)
 #комит Егора
+#коммит жени
