@@ -20,6 +20,8 @@ def answer(message):
 
 if __name__ == '__main__':
   #запуск бота
+#   а вас не смущает что под условием ничего нет?!
+#   bot.infinity_polling находится вне условия!!!
 bot.infinity_polling(none_stop=True,interval=0)
 #комит Егора
 #коммит жени
