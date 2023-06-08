@@ -18,6 +18,8 @@ def answer(message):
   if message.text in kd:
     answers = ['Всё хорошо!', 'Нормально', 'Шикарно']
     bot.send_message(message.chat.id, random.choice(answers))
-bot.infinity_polling(none_stop=True,interval=0)
+
+if __name__ == '__main__':
+    bot.infinity_polling(none_stop=True, interval=0)
 #комит Егора
 #коммит жени
